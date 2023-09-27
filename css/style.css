@@ -1,0 +1,74 @@
+/* TEXT AT TOP OF PAGE */
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    background-color: purple;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/* NAVIGATION BAR ELEMENTS */
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    height:38px;
+}
+
+input[type=text] {
+    width: 500px; /* makes the bar wider */
+    float: center;
+    padding: 7.75px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: none;
+    font-size: 17px;
+}
+
+li {
+    display: inline; /* makes navbar horizontal*/
+ /* makes navbar horizontal */
+
+}
+  
+a {
+    display: block;
+    text-decoration: none; /*removes underline from link*/
+    padding: 10px;
+    /*background-color: #002009; #000099;*/
+    float: left; /*if placed in li{} it will override the float:right in a.split */
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+  }
+  
+/* visited link */
+a:visited {
+    color: green;
+}
+  
+/* mouse over link */
+a:hover {
+    color: lightgray;
+}
+  
+/* selected link */
+a:active {
+    color: lightblue;
+}
+
+/* splits the navbar*/
+a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+}
