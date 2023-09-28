@@ -1,74 +1,48 @@
-/* TEXT AT TOP OF PAGE */
-h1 {
-    font-family: sans-serif;
-    text-align: center;
-    color: white;
-    background-color: purple;
-
+#searchbar {
+  text-align: left;
+  width: 500px; /* makes the bar wider */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
 }
 
-h2 {
-    text-align: center;
+.menubar {
+  background-color: black;
+  padding: 30px;
 }
 
-/* NAVIGATION BAR ELEMENTS */
-ul {
-    list-style-type: none;
-    padding: 0;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    background-color: gray;
-    height:38px;
+.barleft {
+  float: left;
+}
+.barright {
+  float: right;
 }
 
-input[type=text] {
-    width: 500px; /* makes the bar wider */
-    float: center;
-    padding: 7.75px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    border: none;
-    font-size: 17px;
-}
-
-li {
-    display: inline; /* makes navbar horizontal*/
- /* makes navbar horizontal */
-
-}
-  
 a {
-    display: block;
-    text-decoration: none; /*removes underline from link*/
-    padding: 10px;
-    /*background-color: #002009; #000099;*/
-    float: left; /*if placed in li{} it will override the float:right in a.split */
+  text-decoration: none; /*removes underline from link*/
+  padding: 100px;
 }
 
 /* unvisited link */
 a:link {
-    color: white;
-  }
-  
-/* visited link */
-a:visited {
-    color: green;
-}
-  
-/* mouse over link */
-a:hover {
-    color: lightgray;
-}
-  
-/* selected link */
-a:active {
-    color: lightblue;
+  color: white;
 }
 
-/* splits the navbar*/
-a.split {
-    float: right;
-    background-color: #04AA6D;
-    color: white;
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightskyblue;
+}
+
+/* selected link */
+a:active {
+  color: lightblue;
 }
