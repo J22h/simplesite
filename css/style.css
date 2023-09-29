@@ -1,16 +1,14 @@
-/* ========================================================================================================================================================================= */
-section {
-  background-color: black;
+* {
+  box-sizing: border-box;
 }
 
-/* this code does freaking nothing, i will fix this in the later commits, just wanna save progresss for now. also, I LEARNED SO MUCH ABOUT FLEX CONTAINERS */
-/* .section1 { 
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-} */
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ========================================================================================================================================================================= */
 
 .topbar {
   /* only here to make the top not so empty, eventually will have login and cart & other stuff */
@@ -20,14 +18,16 @@ section {
 
 .searchbardiv {
   padding-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .searchbar {
   text-align: left;
   width: 45%; /* makes the bar wider */
-  margin-left: auto;
-  margin-right: auto; /* IT CENTERS THE BAR LETS FUXXING GOOOOO! */
-  display: flex;
+
   padding: 8px;
   border-radius: 50px;
   border: none;
@@ -35,16 +35,97 @@ section {
   font-size: 17px;
 }
 
-.menubar {
+.navbar {
+  display: flex;
+  justify-content: center;
+
   padding: 30px;
-  text-align: center;
+  /*  text-align: center; */
 }
 
-a.menunode {
-  text-decoration: none; /*removes underline from link*/
-  display: inline-flex;
+.navbar-links {
+  width: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
   margin-left: 3%;
   margin-right: 3%;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none; /* REMOVES UNDERLINE FROM LINK */
+  font-size: 1.5rem;
+
+  padding: 0.5rem;
+
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* media event for hamburger bar (hamburger bar will show if browser window is smaller) */
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    width: 100%;
+
+    display: none;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* im just too tired to fix this right now, but there is a centering issue with the hamburger bar drop-down menu */
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
 /* unvisited link */
@@ -70,7 +151,7 @@ a:active {
 .section2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
 }
@@ -95,6 +176,6 @@ img {
 }
 
 p.text1 {
-  width: 400px;
+  width: 600px;
 }
 /* ========================================================================================================================================================================= */
