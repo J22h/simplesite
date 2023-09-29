@@ -1,30 +1,50 @@
-#searchbar {
+/* ========================================================================================================================================================================= */
+section {
+  background-color: black;
+}
+
+/* this code does freaking nothing, i will fix this in the later commits, just wanna save progresss for now. also, I LEARNED SO MUCH ABOUT FLEX CONTAINERS */
+/* .section1 { 
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+} */
+
+.topbar {
+  /* only here to make the top not so empty, eventually will have login and cart & other stuff */
+  background-color: grey;
+  height: 55px;
+}
+
+.searchbardiv {
+  padding-top: 50px;
+}
+
+.searchbar {
   text-align: left;
-  width: 500px; /* makes the bar wider */
+  width: 45%; /* makes the bar wider */
   margin-left: auto;
-  margin-right: auto;
-  display: block;
+  margin-right: auto; /* IT CENTERS THE BAR LETS FUXXING GOOOOO! */
+  display: flex;
   padding: 8px;
   border-radius: 50px;
   border: none;
+
   font-size: 17px;
 }
 
 .menubar {
-  background-color: black;
   padding: 30px;
+  text-align: center;
 }
 
-.barleft {
-  float: left;
-}
-.barright {
-  float: right;
-}
-
-a {
+a.menunode {
   text-decoration: none; /*removes underline from link*/
-  padding: 100px;
+  display: inline-flex;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 /* unvisited link */
@@ -46,3 +66,35 @@ a:hover {
 a:active {
   color: lightblue;
 }
+/* ========================================================================================================================================================================= */
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mySlides {
+  width: 800px;
+
+  /*  margin-right: auto; /* IT CENTERS THE BAR LETS FUXXING GOOOOO! */
+
+  border-radius: 15px;
+  border: none;
+}
+
+.text1 {
+  color: white;
+  text-align: center;
+}
+
+p.text1 {
+  width: 400px;
+}
+/* ========================================================================================================================================================================= */
