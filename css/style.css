@@ -108,12 +108,16 @@ body {
 
     display: none;
   }
+
   .navbar-links ul {
+    padding: 0%;
+    margin: 0%;
     width: 100%;
     flex-direction: column;
   }
 
   /* im just too tired to fix this right now, but there is a centering issue with the hamburger bar drop-down menu */
+  /*   ^^^ FIXED, it was a padding/margin issue with .navbar-links ul so i just set them both to zer0 */
 
   .navbar-links li {
     text-align: center;
@@ -149,6 +153,8 @@ a:active {
 }
 /* ========================================================================================================================================================================= */
 .section2 {
+  margin-bottom: 100px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -179,3 +185,32 @@ p.text1 {
   width: 600px;
 }
 /* ========================================================================================================================================================================= */
+.section3 {
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+}
+
+/* i guess writing the parent class then actual class you want to use is better practice for readable code?? */
+.slider-wrapper .image-list {
+  gap: 18px;
+
+  display: flex;
+  overflow-x: auto;
+
+  grid-template-columns: repeat(10, 10fr);
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 400px;
+  height: 300px;
+
+  object-fit: cover;
+}
