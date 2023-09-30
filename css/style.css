@@ -13,7 +13,18 @@ body {
 .topbar {
   /* only here to make the top not so empty, eventually will have login and cart & other stuff */
   background-color: grey;
-  height: 55px;
+  padding: 15px;
+}
+
+.topbar li {
+  list-style: none; /* removes bullet points | also why is the mass comment command in vs code alt shift a, ctrl shift a is wayyyy better +1pt for linux :pray:*/
+  display: flex;
+  justify-content: right;
+}
+
+.topbar a {
+  margin-right: 20px;
+  text-decoration: none;
 }
 
 .searchbardiv {
@@ -139,7 +150,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: white;
 }
 
 /* mouse over link */
@@ -182,7 +193,7 @@ img {
 }
 
 p.text1 {
-  width: 600px;
+  width: 450px;
 }
 /* ========================================================================================================================================================================= */
 .section3 {
@@ -205,12 +216,14 @@ p.text1 {
   display: flex;
   overflow-x: auto;
 
-  grid-template-columns: repeat(10, 10fr);
+  /* flex-direction: row; */
 }
 
 .slider-wrapper .image-list .image-item {
   width: 400px;
   height: 300px;
+
+  aspect-ratio: 16/9;
 
   object-fit: cover;
 }
